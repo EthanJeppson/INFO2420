@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Backyard Birds - Graphics</title>
-  
   <style type="text/css">
     #thumbs, #image {
       width: 700px;
@@ -14,83 +13,89 @@
       background: #eee;
       padding: 5px;
     }
+
     #thumbs {
       margin-top: 10px;
     }
-    #thumbs img {
-  	width: 150px;     /* or whatever size you want */
-  	height: 100px;
-  	object-fit: cover; /* keeps the image from stretching, centers it */
-  	border: solid 1px #000;
-  	margin: 5px;
-  	cursor: pointer;
-	}
 
+    #thumbs img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+      border: solid 1px #000;
+      margin: 5px;
+      cursor: pointer;
     }
+
     #image {
       height: 400px;
     }
+
     .instructions {
       font-style: italic;
     }
+
     #print, #logo {
       cursor: pointer;
     }
-	
-h1 {
-	color: #023b4b;
-}
-h2 {
-	color: #023b4b;
-}
-h3 {
-	color: #023b4b;
-}
-body {
-	background-color: #e3f6c2;
-}
-a:link {
-	color: #aa2a1d;
-}
-a:hover {
-	color: #fb8f84;
-}
-a:visited {
-	color: #790b00;
-}
-a:active {
-	color: #790b00;
-}
-hr {
-	color: #023b4b;
-}
-p {
-	color: #2d6f81;
-}
-table {
-	border-collapse: collapse;
-	width: 50%;
-	color: white;
-}
-th, td {
-	border: 1px solid black;
-	padding: 8px;
-	text-align: left;
-}
-.top {
-	background-color: #29516b;
-}
-.even {
-	background-color: #859caa;
-}
-tr {
-	background-color: #4f7288;
-}
-</style>
 
+    h1, h2, h3 {
+      color: #023b4b;
+    }
+
+    body {
+      background-color: #e3f6c2;
+    }
+
+    a:link {
+      color: #aa2a1d;
+    }
+
+    a:hover {
+      color: #fb8f84;
+    }
+
+    a:visited, a:active {
+      color: #790b00;
+    }
+
+    hr {
+      color: #023b4b;
+    }
+
+    p {
+      color: #2d6f81;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      color: white;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .top {
+      background-color: #29516b;
+    }
+
+    .even {
+      background-color: #859caa;
+    }
+
+    tr {
+      background-color: #4f7288;
+    }
+	  .center {
+		  text-align: center;
+	  }
+  </style>
 
   <script type="text/javascript">
-    // Image arrays
     var imgArray = [
       'image1lg.jpg',
       'image2lg.jpg',
@@ -115,7 +120,6 @@ tr {
     }
 
     function preloadImages() {
-      // Preload buttons
       const btn1 = new Image();
       btn1.src = "images/print1.png";
 
@@ -128,7 +132,6 @@ tr {
       const logo2 = new Image();
       logo2.src = "images/logo2.png";
 
-      // Preload rollover images
       for (var i = 0; i < imgArray.length; i++) {
         var tmpImg = new Image();
         tmpImg.src = imgPath + imgArray[i];
@@ -137,45 +140,40 @@ tr {
   </script>
 </head>
 
-
-<!--print button-->
-	
 <body onload="preloadImages()">
-<div>
-<a href="#" onmouseover="document.getElementById('print').src='images/print2.png';"
-onmouseout="document.getElementById('print').src='images/print1.png';">
-<img src="Images/print1.png" alt="Print Page" width="200" height="50"
-id="print"></a>
 
+  <!-- Print Button -->
+  <div class="center">
+    <a href="#" onmouseover="document.getElementById('print').src='images/print2.png';"
+       onmouseout="document.getElementById('print').src='images/print1.png';">
+      <img src="images/print1.png" alt="Print Page" width="200" height="50" id="print">
+    </a>
+  </div>
 
-	
-<!--logo rollover-->
-	
-<div>
-<a href="#" onmouseover="document.getElementById('logo').src='images/logo2.png';"
-onmouseout="document.getElementById('logo').src='images/logo1.png';">
-<img src="images/logo1.png" alt="Logo" id="logo"></a>
-</div>	
-	
-</div>
+  <!-- Logo Rollover -->
+  <div class = "center">
+    <a href="#" onmouseover="document.getElementById('logo').src='images/logo2.png';"
+       onmouseout="document.getElementById('logo').src='images/logo1.png';">
+      <img src="images/logo1.png" alt="Logo" id="logo">
+    </a>
+  </div>
 
-<!--html image rollover-->	
-	
-<div id="thumbs">
-		<img src="images/image1sm.jpg" alt="Heron" onmouseover="swapImage(0);">
-		<img src="images/image2sm.jpg" alt="Quail" onmouseover="swapImage(1);">
-		<img src="images/image3sm.jpg" alt="Owl" onmouseover="swapImage(2);">
-		<img src="images/image4sm.jpg" alt="Geese" onmouseover="swapImage(3);">
-		
-</div>
+  <!-- Thumbnail Gallery -->
+  <div id="thumbs">
+    <img src="images/image1sm.jpg" alt="Heron" onmouseover="swapImage(0);">
+    <img src="images/image2sm.jpg" alt="Quail" onmouseover="swapImage(1);">
+    <img src="images/image3sm.jpg" alt="Owl" onmouseover="swapImage(2);">
+    <img src="images/image4sm.jpg" alt="Geese" onmouseover="swapImage(3);">
+  </div>
 
-	<div id="image">
+  <!-- Main Large Image Display -->
+  <div id="image">
+    <img id="theImage" src="images/image2lg.jpg" alt="Quail">
+    <h3 id="bottomText">Quail</h3>
+  </div>
 
-		<img id="theImage" src="images/image2lg.jpg" alt="Quail">
-		<h3 id="bottomText">Quail</h3>
-	</div>
+  <!-- Optional Background Image (not CSS background) -->
+  <img src="images/2colback.png" alt="Background Image">
 
-<img src="images/2colback.png" alt="Background Image">
- 
 </body>
 </html>
