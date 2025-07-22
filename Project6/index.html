@@ -117,16 +117,16 @@ tr {
     function preloadImages() {
       // Preload buttons
       const btn1 = new Image();
-      btn1.src = "Images/print1.png";
+      btn1.src = "images/print1.png";
 
       const btn2 = new Image();
-      btn2.src = "Images/print2.png";
+      btn2.src = "images/print2.png";
 
       const logo1 = new Image();
-      logo1.src = "Images/logo1.png";
+      logo1.src = "images/logo1.png";
 
       const logo2 = new Image();
-      logo2.src = "Images/logo2.png";
+      logo2.src = "images/logo2.png";
 
       // Preload rollover images
       for (var i = 0; i < imgArray.length; i++) {
@@ -142,8 +142,8 @@ tr {
 	
 <body onload="preloadImages()">
 <div>
-<a href="#" onmouseover="document.getElementById('print').src='Images/print2.png';"
-onmouseout="document.getElementById('print').src='Images/print1.png';">
+<a href="#" onmouseover="document.getElementById('print').src='images/print2.png';"
+onmouseout="document.getElementById('print').src='images/print1.png';">
 <img src="Images/print1.png" alt="Print Page" width="200" height="50"
 id="print"></a>
 
@@ -152,9 +152,9 @@ id="print"></a>
 <!--logo rollover-->
 	
 <div>
-<a href="#" onmouseover="document.getElementById('logo').src='Images/logo2.png';"
-onmouseout="document.getElementById('logo').src='Images/logo1.png';">
-<img src="Images/logo1.png" alt="Logo" id="logo"></a>
+<a href="#" onmouseover="document.getElementById('logo').src='images/logo2.png';"
+onmouseout="document.getElementById('logo').src='images/logo1.png';">
+<img src="images/logo1.png" alt="Logo" id="logo"></a>
 </div>	
 	
 </div>
