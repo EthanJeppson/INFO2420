@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#thumbs, #image {
+      width: 700px;
+
+      text-align: center;
+      margin: 0 auto;
+      color: #000;
+      padding: 5px;
+    }
+
+    #thumbs {
+      margin-top: 10px;
+    }
+
+    #thumbs img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    #image {
+      height: 400px;
+    }
+
+    .instructions {
+      font-style: italic;
+    }
+
+    #print, #logo {
+      cursor: pointer;
+    }
+
+    h1, h2, h3 {
+      color: #023b4b;
+		text-align: center;
+		font-size: xx-large;
+    }
+
+	p{
+		font-size: 16;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+    body {
+		margin: 0;
+     	background-color: #324500;
+		font-family: Arial, Helvetica, sans-serif;
+		height: auto;	
+    }
+
+	header {
+		width: 900px;
+		height: 200px;
+		background-color: #0d334c;
+		text-align: center;
+		padding-top: 10px;
+		margin:auto;
+		}
+
+	section {
+		background-image: url("images/2colback.png");
+		background-repeat: repeat-y;
+		overflow: hidden;
+		margin: auto;
+		align-content: center;
+		width: 900px;
+	}
+
+	nav{
+		float: left;
+		width: 250px;
+	}
+
+	article{
+		float:left;
+		width: 650px;
+		text-align: justify;
+	}
+
+	footer{
+		text-align: center;
+		width: 900px;
+		height: 90px;
+		background-color: #0d334c;
+		margin:auto;
+	}
+
+    a:link {
+      color: #aa2a1d;
+    }
+
+    a:hover {
+      color: #fb8f84;
+    }
+
+    a:visited, a:active {
+      color: #790b00;
+    }
+
+    hr {
+      color: #023b4b;
+    }
+
+    p {
+      color: #2d6f81;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 50%;
+      color: white;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .top {
+      background-color: #29516b;
+    }
+
+    .even {
+      background-color: #859caa;
+    }
+
+    tr {
+      background-color: #4f7288;
+    }
+	  .center {
+		  text-align: center;
+	  }
+	.logoleft {
+		float: left;
+		padding-top: 0px;
+		padding-left: 40px;
+	}
+	nav a{
+		border: 6px inset #CCCCCC;
+		background-color:351a00;
+		line-height: 250%;
+		font-weight: bold;
+		font-size: 30px;
+		color: #490700;
+		text-decoration: none;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-left: 20px;
+		font-family: Sans-serif;
+	}
+	nav a:hover{
+		color:#ffc9c3;
+		border:2px outset #cccccc;
+	}
+.container {
+  width: 900px;
+  margin: 0 auto;
+}

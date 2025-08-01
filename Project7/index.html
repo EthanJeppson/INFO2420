@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	
+	<link rel="stylesheet" href="mystyles.css" type="text/css">
+	
+	
+	<script type="text/javascript" src="myscript.js"></script>
+	
+</head>
+<body onload="preloadImages()">
+
+	<header>
+		
+		 <div>
+			<a href="#" onmouseover="document.getElementById('logo').src='images/logo2.png';"
+			   onmouseout="document.getElementById('logo').src='images/logo1.png';">
+			  <img src="images/logo1.png" alt="Logo" id="logo" class="logoleft">
+			</a>
+		  </div>
+		
+		<img src="images/banner.png" alt="banner">
+		
+	</header>
+	
+ 	<section>
+		<nav>
+			<a href="home.html">Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+			<a href="aboutus.html">About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+			<a href="tributes.html">Tributes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><br>
+			<a href="favorites.html">My Favorites</a><br>
+			<a href="survey.html">Survey Page&nbsp;</a>
+		</nav>
+		<article>
+			<h1>Welcome to Backyard Birds of Utah!</h1>
+			<p>If you love birdwatching like we do, you should enjoy looking around this site.  
+			Take a look at our Bird Profiles and take the opportunity to complete our survey.</p>
+			<div id="thumbs">
+			<img src="images/image1sm.jpg" alt="Heron" onmouseover="swapImage(0);">
+			<img src="images/image2sm.jpg" alt="Quail" onmouseover="swapImage(1);">
+			<img src="images/image3sm.jpg" alt="Owl" onmouseover="swapImage(2);">
+			<img src="images/image4sm.jpg" alt="Geese" onmouseover="swapImage(3);">
+		  	</div>
+			
+
+  <!-- Main Large Image Display -->
+  <div id="image">
+    <img id="theImage" src="images/image2lg.jpg" alt="Quail">
+    <h3 id="bottomText">Quail</h3>
+  </div>
+		</article>
+	</section>
+	<footer>
+		<p>Contact us <a href="mailto:10878478@uvu.edu">Here</a></p>
+		<p>This
+		web site has been created solely for educational
+		purposes.</p>
+	</footer>
+	
+</body>
+</html>
